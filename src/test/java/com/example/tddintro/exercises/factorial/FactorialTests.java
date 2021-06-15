@@ -4,7 +4,6 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-
 /*
 
     * Change Factorial.compute() so that the first test passes and the remaining tests fail.
