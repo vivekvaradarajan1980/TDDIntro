@@ -3,8 +3,7 @@ package com.example.tddintro.resources.patterns.constructor_and_factory.one_cons
 import org.junit.Ignore;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.MatcherAssert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class ProductTest {
     @Test
@@ -18,6 +17,6 @@ public class ProductTest {
     public void pricePerItemShouldBeSameAsTotalPriceWhenThereIsOneItemWithDefaultConstructor() {
         Product product = new Product();
         product.setTotalPrice(14.0);
-        assertThat(product.pricePerItem(), is(14.0));
+        assertThat(product.pricePerItem()).isEqualTo(14.0);
     }
 }

@@ -6,10 +6,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.core.CombinableMatcher.both;
-import static org.hamcrest.core.StringContains.containsString;
-import static org.junit.Assert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class StringJoinerTests {
     private List<String> strings;
@@ -23,21 +20,23 @@ public class StringJoinerTests {
 
     @Test
     public void shouldJoinIntoAnEmptyStringWhenListIsEmpty(){
-        assertThat(joiner.join(strings), is(""));
+        assertThat(joiner.join(strings)).isEqualTo("");
     }
 
     @Test
     public void shouldJoinIntoTheStringWhenListIsOneString(){
         String aString = "A String";
         strings.add(aString);
-        assertThat(joiner.join(strings), is(aString));
+        assertThat(joiner.join(strings)).isEqualTo(aString);
     }
 
     @Test
     public void shouldContainBothStringsWhenListIsTwoStrings(){
         strings.add("A");
         strings.add("B");
-        assertThat(joiner.join(strings), both(containsString("A")).and(containsString("B")));
+        assertThat(joiner.join(strings))
+                .contains("A")
+                .contains("B");
     }
 
     @Test
@@ -45,6 +44,6 @@ public class StringJoinerTests {
         StringJoiner joinerWithDelimiter = new StringJoiner(",");
         strings.add("A");
         strings.add("B");
-        assertThat(joinerWithDelimiter.join(strings), is("A,B"));
+        assertThat(joinerWithDelimiter.join(strings)).isEqualTo("A,B");
     }
 }

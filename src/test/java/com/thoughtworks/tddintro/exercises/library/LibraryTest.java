@@ -10,9 +10,7 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.hamcrest.CoreMatchers.not;
-import static org.hamcrest.core.IsCollectionContaining.hasItems;
-import static org.junit.Assert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -58,7 +56,7 @@ public class LibraryTest {
     public void shouldAddBookToCollectionWhenEnteredByUser() throws IOException {
         when(bufferedReader.readLine()).thenReturn("The Hobbit");
         library.enterBook();
-        assertThat(books, hasItems("The Hobbit"));
+        assertThat(books).contains("The Hobbit");
     }
 
     @Test
@@ -69,6 +67,6 @@ public class LibraryTest {
         books.add("The Two Towers");
         library.removeBook();
 
-        assertThat(books, not(hasItems("The Two Towers")));
+        assertThat(books).doesNotContain("The Two Towers");
     }
 }

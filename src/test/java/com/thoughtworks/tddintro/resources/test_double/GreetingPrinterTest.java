@@ -2,8 +2,7 @@ package com.example.tddintro.resources.test_double;
 
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class GreetingPrinterTest {
 
@@ -14,7 +13,7 @@ public class GreetingPrinterTest {
 
         greetingPrinter.printGreeting();
 
-        assertThat(printStream.printedString(), is("Greetings!"));
+        assertThat(printStream.printedString()).isEqualTo("Greetings!");
     }
 
 }
