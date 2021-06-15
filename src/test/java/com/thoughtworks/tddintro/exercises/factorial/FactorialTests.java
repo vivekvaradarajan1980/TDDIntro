@@ -1,4 +1,4 @@
-package com.thoughtworks.tddintro.exercises.factorial;
+package com.example.tddintro.exercises.factorial;
 import org.junit.Ignore;
 import org.junit.Test;
 

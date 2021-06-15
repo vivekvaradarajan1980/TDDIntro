@@ -1,4 +1,4 @@
-package com.thoughtworks.tddintro.exercises.factorial;
+package com.example.tddintro.exercises.factorial;
 
 public class Factorial {
     public Integer compute(int i) {

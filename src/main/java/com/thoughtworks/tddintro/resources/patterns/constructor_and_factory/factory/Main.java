@@ -1,4 +1,4 @@
-package com.thoughtworks.tddintro.resources.patterns.constructor_and_factory.factory;
+package com.example.tddintro.resources.patterns.constructor_and_factory.factory;
 
 import java.util.ArrayList;
 import java.util.List;

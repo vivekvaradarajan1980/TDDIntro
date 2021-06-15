@@ -1,4 +1,4 @@
-package com.thoughtworks.tddintro.resources.test_double;
+package com.example.tddintro.resources.test_double;
 
 import org.junit.Test;
 

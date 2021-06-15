@@ -1,4 +1,4 @@
-package com.thoughtworks.tddintro.resources.demeter;
+package com.example.tddintro.resources.demeter;
 
 public class Car {
 

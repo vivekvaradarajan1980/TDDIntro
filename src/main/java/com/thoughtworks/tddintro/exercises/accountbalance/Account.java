@@ -1,4 +1,4 @@
-package com.thoughtworks.tddintro.exercises.accountbalance;
+package com.example.tddintro.exercises.accountbalance;
 
 public class Account {
 }

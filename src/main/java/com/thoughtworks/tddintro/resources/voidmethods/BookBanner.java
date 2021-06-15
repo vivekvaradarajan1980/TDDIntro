@@ -1,4 +1,4 @@
-package com.thoughtworks.tddintro.resources.voidmethods;
+package com.example.tddintro.resources.voidmethods;
 
 import java.util.Collection;
 

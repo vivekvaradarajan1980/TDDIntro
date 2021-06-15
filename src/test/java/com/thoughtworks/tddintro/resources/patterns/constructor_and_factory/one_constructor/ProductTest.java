@@ -1,4 +1,4 @@
-package com.thoughtworks.tddintro.resources.patterns.constructor_and_factory.one_constructor;
+package com.example.tddintro.resources.patterns.constructor_and_factory.one_constructor;
 
 import org.junit.Ignore;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package com.thoughtworks.tddintro.resources.string_joiner;
+package com.example.tddintro.resources.string_joiner;
 
 import java.util.List;
 

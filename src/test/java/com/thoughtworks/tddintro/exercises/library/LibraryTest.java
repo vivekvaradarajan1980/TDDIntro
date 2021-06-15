@@ -1,4 +1,4 @@
-package com.thoughtworks.tddintro.exercises.library;
+package com.example.tddintro.exercises.library;
 
 import org.junit.Before;
 import org.junit.Ignore;

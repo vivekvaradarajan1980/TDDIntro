@@ -1,6 +1,6 @@
-package com.thoughtworks.tddintro.resources.mockito;
+package com.example.tddintro.resources.mockito;
 
-import com.thoughtworks.tddintro.resources.test_double.GreetingPrinter;
+import com.example.tddintro.resources.test_double.GreetingPrinter;
 import org.junit.Test;
 
 import java.io.PrintStream;

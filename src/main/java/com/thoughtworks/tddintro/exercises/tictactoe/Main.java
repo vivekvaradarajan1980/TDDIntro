@@ -1,4 +1,4 @@
-package com.thoughtworks.tddintro.exercises.tictactoe;
+package com.example.tddintro.exercises.tictactoe;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

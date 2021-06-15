@@ -1,4 +1,4 @@
-package com.thoughtworks.tddintro.exercises.tictactoe;
+package com.example.tddintro.exercises.tictactoe;
 
 
 import org.junit.Test;

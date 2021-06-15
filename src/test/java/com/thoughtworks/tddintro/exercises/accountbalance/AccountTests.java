@@ -1,4 +1,4 @@
-package com.thoughtworks.tddintro.exercises.accountbalance;
+package com.example.tddintro.exercises.accountbalance;
 
 import org.junit.Ignore;
 import org.junit.Test;
